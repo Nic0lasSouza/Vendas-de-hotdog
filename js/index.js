@@ -26,7 +26,8 @@ function criar() {
             setEvents(produto);
         } else {
             var produto = document.getElementsByClassName("outros")[0].cloneNode(true);
-            produto.getElementsByClassName("outros-desc")[0] .innerHTML = p.descricao
+            produto.getElementsByClassName("outros-desc")[0].innerHTML = p.descricao;
+            produto.getElementsByClassName("outros-valor")[0].innerHTML = `R$`
         }
     }
 }
